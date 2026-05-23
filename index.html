@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murali Prakash K | Flutter Developer | Cyber Portfolio</title>
+  <meta name="description" content="Cyberpunk-themed portfolio of Murali Prakash K, a production-grade Flutter Mobile App Developer skilled in Bloc, Firebase, and Clean Architecture.">
+  
+  <!-- FontAwesome for Premium Cyber Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Retro CRT Monitor Filters -->
+  <div class="scanlines"></div>
+  <div class="crt-overlay"></div>
+  <div class="cyber-grid"></div>
+
+  <!-- Sticky Glassmorphic Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      MURALI <span>PRAKASH</span>
+    </div>
+    
+    <ul class="nav-links" id="navLinks">
+      <li class="nav-item"><a href="#hero">Home</a></li>
+      <li class="nav-item"><a href="#about">About</a></li>
+      <li class="nav-item"><a href="#skills">Skills</a></li>
+      <li class="nav-item"><a href="#experience">Experience</a></li>
+      <li class="nav-item"><a href="#projects">Projects</a></li>
+      <li class="nav-item"><a href="#education">Education</a></li>
+      <li class="nav-item"><a href="#achievements">Achievements</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburgerMenu" aria-label="Toggle Navigation Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Canvas Particle Stream Background (Hero Area) -->
+  <div class="canvas-container">
+    <canvas id="particleCanvas"></canvas>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <!-- <div class="hero-prefix">SYSTEM.INITIALIZE // Online</div> -->
+    <h1 class="hero-name">MURALI PRAKASH K</h1>
+    <div class="hero-subtitle">
+      <span id="typedText"></span><span class="typing-cursor"></span>
+    </div>
+    
+    <!-- Contact Infostyled as glowing neon buttons -->
+    <div class="contact-icons">
+      <a href="tel:9080795171" class="neon-btn-icon" title="Call Mobile">
+        <i class="fa-solid fa-phone"></i>
+        <span>+91 90807 95171</span>
+      </a>
+      <a href="mailto:muraliprakash004@gmail.com" class="neon-btn-icon" title="Send Email">
+        <i class="fa-solid fa-envelope"></i>
+        <span>muraliprakash004@gmail.com</span>
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="neon-btn-icon" title="LinkedIn Profile">
+        <i class="fa-brands fa-linkedin-in"></i>
+        <span>LinkedIn</span>
+      </a>
+    </div>
+
+    <div class="cta-container">
+      <a href="#projects" class="neon-cta">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About / Terminal Section -->
+  <section class="about reveal-hidden" id="about">
+    <div class="section-header">
+      <span class="subtitle">SYS.PROFILE</span>
+      <h2>About Me</h2>
+    </div>
+    
+    <div class="cyber-card about-terminal">
+      <div class="terminal-header">
+        <div class="terminal-buttons">
+          <span class="terminal-btn close"></span>
+          <span class="terminal-btn minimize"></span>
+          <span class="terminal-btn maximize"></span>
+        </div>
+        <div class="terminal-title">developer_profile.sh</div>
+      </div>
+      
+      <div class="about-content">
+        <div class="terminal-prompt">
+          <span>user@murali:~$</span> cat about_summary.md
+        </div>
+        <p class="about-text">
+          Mobile App Developer with hands-on experience building production-grade mobile apps using Flutter, REST APIs, Firebase, and State Management. Skilled in responsive UI architectures, Figma-to-Flutter conversion, Bloc/Provider/GetX state structures, and writing clean, maintainable, scalable code.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills reveal-hidden" id="skills">
+    <div class="section-header">
+      <span class="subtitle">TECH.STACK</span>
+      <h2>Skills & Core Competencies</h2>
+    </div>
+    
+    <div class="skills-grid">
+      <!-- Frontend Category -->
+      <div class="skills-category">
+        <h3><i class="fa-solid fa-laptop-code"></i> Frontend Tech</h3>
+        <div class="skills-list">
+          <span class="skill-badge frontend">Flutter (Dart)</span>
+          <span class="skill-badge frontend">Responsive UI</span>
+          <span class="skill-badge frontend">Animations</span>
+        </div>
+      </div>
+
+      <!-- State Management Category -->
+      <div class="skills-category">
+        <h3><i class="fa-solid fa-gears"></i> State Management</h3>
+        <div class="skills-list">
+          <span class="skill-badge state">Bloc</span>
+          <span class="skill-badge state">Provider</span>
+          <span class="skill-badge state">GetX</span>
+        </div>
+      </div>
+
+      <!-- Backend Category -->
+      <div class="skills-category">
+        <h3><i class="fa-solid fa-server"></i> Backend Systems</h3>
+        <div class="skills-list">
+          <span class="skill-badge backend">Firebase</span>
+          <span class="skill-badge backend">Firestore</span>
+          <span class="skill-badge backend">REST APIs</span>
+        </div>
+      </div>
+
+      <!-- Database Category -->
+      <div class="skills-category">
+        <h3><i class="fa-solid fa-database"></i> Database Systems</h3>
+        <div class="skills-list">
+          <span class="skill-badge database">Hive</span>
+          <span class="skill-badge database">Shared Preference</span>
+          <span class="skill-badge database">SQLite</span>
+        </div>
+      </div>
+
+      <!-- Architecture Category -->
+      <div class="skills-category">
+        <h3><i class="fa-solid fa-sitemap"></i> Architecture</h3>
+        <div class="skills-list">
+          <span class="skill-badge architecture">MVC</span>
+          <span class="skill-badge architecture">MVVM</span>
+          <span class="skill-badge architecture">Clean Architecture</span>
+        </div>
+      </div>
+
+     <div class="skills-category">
+      <h3><i class="fa-solid fa-cloud-arrow-up"></i> Deployment</h3>
+       <div class="skills-list">
+        <span class="skill-badge architecture">Play Store</span>
+        <span class="skill-badge architecture">App Store</span>
+        <span class="skill-badge architecture">Play Console Management</span>
+        <span class="skill-badge architecture">App Store Connect</span>
+      </div>
+    </div>
+
+      <!-- Tools Category -->
+      <div class="skills-category">
+        <h3><i class="fa-solid fa-screwdriver-wrench"></i> Dev Tools</h3>
+        <div class="skills-list">
+          <span class="skill-badge tools">Git / GitHub</span>
+          <span class="skill-badge tools">VSCode</span>
+          <span class="skill-badge tools">Android Studio</span>
+          <span class="skill-badge tools">Xcode</span>
+          <span class="skill-badge tools">Postman</span>
+          <span class="skill-badge tools">Figma</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience reveal-hidden" id="experience">
+    <div class="section-header">
+      <span class="subtitle">TIMELINE.LOG</span>
+      <h2>Professional Experience</h2>
+    </div>
+    
+    <div class="timeline-container">
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div class="timeline-title">
+            <h3>Flutter Developer Intern</h3>
+            <span class="timeline-company">Smart Global Solutions, Coimbatore</span>
+          </div>
+          <span class="timeline-date">Sep 2025 – Mar 2026</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Successfully developed, tested, and deployed 2 production-grade live apps to the Google Play Store and Apple App Store.</li>
+          <li>Collaborated closely with backend engineers and UI/UX designers to translate Figma design models into high-performance responsive Flutter code.</li>
+          <li>Optimized application performance, resolving critical bugs to ensure smooth UI renderings and minimal CPU/memory footprint across diverse mobile hardware.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects reveal-hidden" id="projects">
+    <div class="section-header">
+      <span class="subtitle">WORK.DEPLOYS</span>
+      <h2>Featured Projects</h2>
+    </div>
+    
+    <div class="projects-grid">
+      <!-- ERP Project -->
+      <div class="cyber-card project-card">
+        <div class="project-icon">
+          <i class="fa-solid fa-ticket-simple"></i>
+        </div>
+        <h3>ERP – Sales & Support</h3>
+        <p class="project-desc">
+          An enterprise after-sales service and customer support ticketing system featuring dynamic ticket creation, auto-assignment, multi-tier escalation, and real-time status resolution tracking.
+        </p>
+        <div class="project-tech">
+          <span>Flutter</span>
+          <span>REST APIs</span>
+          <span>State Management</span>
+        </div>
+      </div>
+
+      <!-- HRM App -->
+      <div class="cyber-card project-card">
+        <div class="project-icon">
+          <i class="fa-solid fa-users-gear"></i>
+        </div>
+        <h3>HRM Application</h3>
+        <p class="project-desc">
+          Human Resource Management dashboard facilitating secure employee registration, live geofenced attendance, leave application workflow, payroll tracking, and performance logs.
+        </p>
+        <div class="project-tech">
+          <span>Flutter</span>
+          <span>Firebase</span>
+          <span>Local DB</span>
+        </div>
+      </div>
+
+      <!-- Chit Fund App -->
+      <div class="cyber-card project-card">
+        <div class="project-icon">
+          <i class="fa-solid fa-wallet"></i>
+        </div>
+        <h3>Chit Fund App</h3>
+        <p class="project-desc">
+          A security-optimized money transfer and microfinance management app featuring real-time API data binding, offline state persistence, and reliability-optimized payment transaction logs.
+        </p>
+        <div class="project-tech">
+          <span>Flutter</span>
+          <span>SQLite</span>
+          <span>Clean Architecture</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education reveal-hidden" id="education">
+    <div class="section-header">
+      <span class="subtitle">ACADEMIC.LOG</span>
+      <h2>Education History</h2>
+    </div>
+    
+    <div class="edu-grid">
+      <!-- BE CSE -->
+      <div class="cyber-card edu-card">
+        <div class="edu-degree">B.E. Computer Science Engineering</div>
+        <div class="edu-institution">Annamalai University, FEAT, Chidambaram</div>
+        <div class="edu-meta">
+          <span>Timeline: 2021 – 2025</span>
+          <span class="score">CGPA: 7.27</span>
+        </div>
+      </div>
+
+      <!-- Schooling -->
+      <div class="cyber-card edu-card">
+        <div class="edu-degree">HSC & SSLC Education</div>
+        <div class="edu-institution">Lord Venkateshwara Matric Hr Sec School, Madurai</div>
+        <div class="edu-meta">
+          <span>HSC: 90%</span>
+          <span class="score">SSLC: 85%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="achievements reveal-hidden" id="achievements">
+    <div class="section-header">
+      <span class="subtitle">HONORS.RECORDS</span>
+      <h2>Achievements & Key Badges</h2>
+    </div>
+    
+    <div class="achievements-grid">
+      <!-- Responsive layouts -->
+      <div class="cyber-card achievement-card">
+        <div class="achievement-icon">
+          <i class="fa-solid fa-display"></i>
+        </div>
+        <div class="achievement-info">
+          <h3>Adaptive Grid Architecture</h3>
+          <p>Expertly implemented responsive layouts using MediaQuery & LayoutBuilder across mobile, tablet, and web viewports, resulting in a single code-base solution.</p>
+        </div>
+      </div>
+
+      <!-- App Store Publishing -->
+      <div class="cyber-card achievement-card">
+        <div class="achievement-icon">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+        </div>
+        <div class="achievement-info">
+          <h3>App Store Deployments</h3>
+          <p>Successfully managed end-to-end publishing pipelines, achieving App Store and Google Play Store compliance, builds, review clearances, and active releases.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- High-Tech Cyber Footer -->
+  <footer class="cyber-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        MURALI <span>PRAKASH</span> K
+      </div>
+      <!-- <p class="footer-tech">
+        HOSTING ENVIRONMENT // SECURE PORTFOLIO ENGINE v1.2.9 <br>
+        DESIGNED WITH <span>HTML5</span> // <span>CSS3</span> // <span>VANILLA JS</span>
+      </p> -->
+      <div class="footer-copy">
+        &copy; 2026 MURALI PRAKASH K. ALL RIGHTS RESERVED. SECURE CONNECTION ESTABLISHED.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Javascript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
